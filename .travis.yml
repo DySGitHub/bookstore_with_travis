@@ -6,4 +6,4 @@ rvm:
     before_script:
     - touch $DB && ruby test/integration/setup_datastores.rb
     script: 
-    - rspec test/integration/rspec_data_access.rb
+    - rspec test/unit/rspec_data_access.rb
