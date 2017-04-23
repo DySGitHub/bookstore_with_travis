@@ -25,6 +25,13 @@ describe DataAccess do
             expect(result).to eql @book1    
          end
      end
+      
+       describe "ISBN Search" do
+       before(:each) do
+          dBase = Sequel.sqlite(ENV['DB'] )
+          @sqlp = SQLitePersistence.new dBase
+       end
+      
      context "required book is in the remote cache" do
          context "but not in the local cache" do
             it "should ignore the database and get it from the remote cache" do
