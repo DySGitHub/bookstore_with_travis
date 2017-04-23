@@ -1,5 +1,4 @@
 source :rubygems
-gem "rake"
 gem "sqlite3"  
 gem "sequel" 
 gem "dalli" 
