@@ -1,5 +1,5 @@
 require 'sequel'
-    require 'sqlite3'
+require 'sqlite3'
 
     dBase = Sequel.sqlite(ENV['DB'])
     dBase.create_table :books do
